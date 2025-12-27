@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  /*colors*/
+  --bg-color: #1d1d47; 
+  --input-bg-color: #ddcbcb;
+  --text-color: #ffffff;
+  --description-color: #759643;
+  --input-text-color: #272525;
+
+  /* font-sizes */
+  --header-font-size: 3.5rem;
+ --input-font-size: 1.2rem;
+  --p-font-size: 1.3rem;
+  --description-font-size: 1.7rem;
+
+  /* font-families */
+  --font-header: "Roboto", sans-serif;
+  --font-p: "Lato", sans-serif;
+}
+body {
+  font-family: var(--font-p);
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  background-image: linear-gradient(rgb(16, 16, 78), var(--bg-color));
+  mask-repeat: no-repeat;
+  color: var(--text-color);
+  margin: auto;
+}
+
+h1 {
+  font-family: var(--font-header);
+  text-align: center;
+  font-size: var(--header-font-size);
+  letter-spacing: 5px;
+  padding-top: 50px;
+
+}
+
+.form {
+ background-color: var(--input-bg-color);
+ color: var(--input-text-color);
+ padding: 15px;
+ border-radius: 25px;
+ margin: 50px;
+ text-align: center;
+}
+.form p {
+  padding-bottom: 30px;
+  letter-spacing: 2px;
+  font-size: var(--p-font-size);
+}
+
+.form input {
+font-size: var(--input-font-size);
+border: none;
+outline: none;
+background-color: transparent;
+border-bottom: 1px solid var(--bg-color);
+width: 50%;
+margin: 25px;
+}
+
+.form button {
+  font-size: var(--input-font-size);
+  padding: 10px;
+  background-color: var(--bg-color);
+  color: var(--input-bg-color);
+  border-radius: 40px;
+
+.result {
+ font-size: var(--description-font-size);
+ color: var(--input-text-color);
+ text-align: center;
+ padding: 20px;
+  }
+}
+.description {
+  font-size: var(--description-font-size);
+  background-color: var(--description-color);
+  width: 70%;
+  border-radius: 25px;
+  margin: auto;
+  text-align: center;
+
+}
+.description p {
+font-size: var(--description-font-size);
+letter-spacing: 1px;
+word-spacing: 3px;
+padding: 20px 40px;
+
+}
+.description p::before {
+  content: "💡";
+  margin-right: 15px;
+}
+
