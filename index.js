@@ -4,6 +4,10 @@ let result = document.getElementById("result");
 
 checkBtn.addEventListener("click", palindrome);
 
+function palindrome(e) {
+  e.preventDefault();
+}
+
 function palindrome() {
   if (textInput.value == "") {
     alert("Please input a value");
@@ -27,3 +31,4 @@ function palindrome() {
     result.innerHTML = textInput.value + " is not a palindrome"
   }
 }
+
